@@ -1,0 +1,37 @@
+{
+  "name": "shoppingcart",
+  "description": "Trying some new things",
+  "main": "",
+  "authors": [
+    "Anurag"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "homepage": "https://github.com/anurag1603/first-try",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "videogular": "^1.4.4",
+    "angular-bootstrap": "^2.5.0",
+    "angular": "^1.6.4",
+    "videogular-controls": "^1.4.4",
+    "videogular-buffering": "^1.4.4",
+    "videogular-overlay-play": "^1.4.4",
+    "videogular-poster": "^1.4.4",
+    "videogular-ima-ads": "^1.4.4",
+    "videogular-angulartics": "^1.4.4",
+    "videogular-themes-default": "^1.4.4"
+  }
+}

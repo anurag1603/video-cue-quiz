@@ -1,0 +1,20 @@
+{
+  "name": "shoppingcart",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "anurag",
+  "contributors": [],
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-inject": "^4.2.0",
+    "main-bower-files": "^2.13.1"
+  }
+}
