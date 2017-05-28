@@ -6,7 +6,7 @@ angular.module('shoppingCart', ["ngSanitize",
     "com.2fdevs.videogular.plugins.overlayplay",
     "com.2fdevs.videogular.plugins.poster"]).controller('itemsList', function ($scope , $sce) {
     
-    this.list = ['tv', 'fridger ', 'ac'];
+    this.list = ['tv', 'fridger ', 'ac' , 'r1122'];
 
     this.config = {
         sources: [
