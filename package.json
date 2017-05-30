@@ -1,5 +1,5 @@
 {
-  "name": "shoppingcart",
+  "name": "videocueQuiz",
   "version": "1.0.0",
   "keywords": [
     "util",
@@ -12,6 +12,7 @@
   "contributors": [],
   "dependencies": {},
   "devDependencies": {
+    "event-stream": "^3.3.4",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-inject": "^4.2.0",

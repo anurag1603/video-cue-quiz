@@ -1,12 +1,15 @@
 'use strict';
 
-angular.module('shoppingCart').component('itemList', {
+angular.module('videocueQuiz').component('itemList', {
   templateUrl: 'heroDetail.html',
   bindings: {
     hero: '<'
   }, 
   controller: function (){
-      console.log('man shit happens');
+      this.getData = function (url){
+          console.log(url);
+      };
+      console.log('man shit happens ');
       
   }
 });
