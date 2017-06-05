@@ -1,0 +1,35 @@
+<div class="breathing-space">
+
+    <div ng-if="$ctrl.showUrl" >
+        <span>{{::$ctrl.videoData.url}}</span>
+        <span class="btn btn-default"
+              ng-click="$ctrl.editUrl(); $ctrl.showUrl = !$ctrl.showUrl" >
+            Edit
+        </span>
+    </div>
+    <div ng-if="!$ctrl.showUrl" >
+        Url of Video -:  
+        <input ng-model="$ctrl.videoData.url" 
+                         ng-keyup="$event.keyCode == 13 && $ctrl.addUrl($ctrl.videoData.url)"
+                         type="url"/>
+        <button class="btn btn-default"
+                ng-click="$ctrl.addUrl($ctrl.videoData.url);$ctrl.showUrl = !$ctrl.showUrl">
+            <i class="fa fa-check"></i>
+        </button>       
+    </div>
+    <div ng-repeat="point in $ctrl.videoData.questions track by $index"
+         class="breathing-space clearfix">
+        {{::$index+1}})  {{::point}}
+        <span class="btn btn-danger pull-right"
+              ng-click="$ctrl.deleteQues(point)">
+            <i class="fa fa-times"></i>
+        </span>
+    </div>
+    Questions of Video -:  
+    <input ng-model="$ctrl.questions"
+           ng-keyup="$event.keyCode == 13 && $ctrl.addQuestions($ctrl.questions)"/>
+    <button class="btn btn-default"
+            ng-click="$ctrl.addQuestions($ctrl.questions)">
+        <i class="fa fa-plus"></i>
+    </button>       
+</div>    

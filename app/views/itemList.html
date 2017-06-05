@@ -1,8 +1,15 @@
-Hello Guys
-<div ng-controller="itemsList as controller">
-    <div ng-repeat="item in ::controller.list">
-        {{item}} 
-    </div>
+<div ng-controller="itemsList as controller"
+     class="container">
+    <!--{{controller}}-->
+    <!--    <div ng-repeat="item in ::controller.list">
+            {{item}} 
+        </div>-->
+    <div class="breathing-space clearfix">
+        <button class="btn btn-default pull-right blg btn-lg"
+                ng-click="controller.openModal()">
+            <i class="fa fa-plus"></i>
+        </button>
+    </div>  
     <videogular vg-theme="controller.config.theme">
         <vg-media vg-src="controller.config.sources"
                   vg-tracks="controller.config.tracks">
@@ -23,6 +30,8 @@ Hello Guys
         <vg-overlay-play></vg-overlay-play>
         <vg-poster vg-url='controller.config.plugins.poster'></vg-poster>
     </videogular>
+
 </div>
 
-<items-list items = 'list' ></items-list>
+<!--<items-list items = 'list' ></items-list>-->
+
