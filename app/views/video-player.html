@@ -1,0 +1,36 @@
+<div class="container">
+    <!--<item-list></item-list>-->
+    
+    <div class="breathing-space clearfix">
+        <button class="btn btn-default pull-right blg btn-lg"
+                ng-click="$ctrl.openModal()">
+            <i class="fa fa-plus"></i>
+        </button>
+    </div>  
+    <videogular vg-player-ready="$ctrl.onPlayerReady($API)" 
+                vg-theme="$ctrl.config.theme"
+                vg-update-time="$ctrl.onUpdateTime($currentTime, $duration)">
+        <vg-media vg-src="$ctrl.config.sources"
+                  vg-tracks="$ctrl.config.tracks">
+        </vg-media>
+        <vg-controls vg-autohide="$ctrl.config.autoHide">
+            <vg-play-pause-button></vg-play-pause-button>
+            <vg-time-display>{{ currentTime | date:'mm:ss' :'UTC'}}</vg-time-display>
+            <vg-scrub-bar>
+                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+            </vg-scrub-bar>
+            <vg-time-display>{{ timeLeft | date:'mm:ss':'UTC' }}</vg-time-display>
+            <vg-volume>
+                <vg-mute-button></vg-mute-button>
+                <vg-volume-bar></vg-volume-bar>
+            </vg-volume>
+            <vg-fullscreen-button></vg-fullscreen-button>
+        </vg-controls>
+        <vg-overlay-play></vg-overlay-play>
+        <vg-poster vg-url='$ctrl.config.plugins.poster'></vg-poster>
+    </videogular>
+    {{$ctrl.config.sources}}
+</div>
+
+<!--<items-list items = 'list' ></items-list>-->
+

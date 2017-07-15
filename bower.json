@@ -32,6 +32,17 @@
     "videogular-poster": "^1.4.4",
     "videogular-ima-ads": "^1.4.4",
     "videogular-angulartics": "^1.4.4",
-    "videogular-themes-default": "^1.4.4"
+    "videogular-themes-default": "^1.4.4",
+    "components-font-awesome": "^4.7.0",
+    "bootstrap": "^3.3.7"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
   }
 }
